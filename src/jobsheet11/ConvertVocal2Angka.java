@@ -20,8 +20,22 @@ public class ConvertVocal2Angka {
         String identitas = "Fahdina Hutami Omeini / X RPL 2 / 11";
         
         tampilJudul(identitas);
+        String kalimat = tampilInput();}
+        
+        private static String tampilInput() {
+            Scanner scanner = new Scanner(System.in);
+            
+            System.out.println("Masukan Kalimat: ");
+            String kalimat = scanner.nextLine();
+            System.out.println("Kalimat Asli : " + kalimat);
+            
+            return kalimat;
+            
+        
+        }   
+
     }    
-}    
+   
            
 
         
