@@ -23,6 +23,7 @@ public class ConvertVocal2Angka {
         String kalimat = tampilInput();
         String convert = vocal2Angka(kalimat);
         tampilkanPerKata(kalimat, convert);
+        tampilHasil(convert);
     }
         
         private static String tampilInput() {
@@ -54,15 +55,23 @@ public class ConvertVocal2Angka {
                     for(int i=0;i<arrKal.length;i++)
                         System.out.println(arrKal[i] + " => " + arrCon[i]);
                     
+        }
+        private static void tampilkanHasil(String convert) {
+                System.out.println("Kalimat Alay Angka : " + convert);
+
                     
             }        
+
+    private static void tampilHasil(String convert) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
                     
             }
 
             
         
-        }   
+        
 
     
    
