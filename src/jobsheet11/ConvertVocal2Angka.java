@@ -20,7 +20,9 @@ public class ConvertVocal2Angka {
         String identitas = "Fahdina Hutami Omeini / X RPL 2 / 11";
         
         tampilJudul(identitas);
-        String kalimat = tampilInput();}
+        String kalimat = tampilInput();
+        String convert = vocal2Angka(kalimat);
+    }
         
         private static String tampilInput() {
             Scanner scanner = new Scanner(System.in);
@@ -30,11 +32,26 @@ public class ConvertVocal2Angka {
             System.out.println("Kalimat Asli : " + kalimat);
             
             return kalimat;
+        }
+            
+        private static String vocal2Angka(String kalimat) {
+                char [][] arConvert = 
+                {{'a','4'},{'i','1'},{'u','2'},{'e','3'},{'o','0'}};
+                
+                kalimat = kalimat.toLowerCase();
+        for (char[] arConvert1 : arConvert) {
+            kalimat = kalimat.replace(arConvert1[0], arConvert1[1]);
+        }
+                    
+                return kalimat;
+                    
+            }
+
             
         
         }   
 
-    }    
+    
    
            
 
